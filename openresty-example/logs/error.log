@@ -1,0 +1,14 @@
+2026/01/16 10:40:37 [alert] 1#1: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:10
+2026/01/16 10:46:38 [alert] 1#1: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:10
+2026/01/16 10:46:45 [error] 7#7: *1 failed to load external Lua file "/usr/local/openresty/nginx/services/my.lua": cannot open /usr/local/openresty/nginx/services/my.lua: No such file or directory, client: 172.18.0.1, server: *.*, request: "GET / HTTP/1.1", host: "127.0.0.1:6954"
+2026/01/16 10:46:45 [error] 7#7: *1 failed to load external Lua file "/usr/local/openresty/nginx/services/my.lua": cannot open /usr/local/openresty/nginx/services/my.lua: No such file or directory, client: 172.18.0.1, server: *.*, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:6954", referrer: "http://127.0.0.1:6954/"
+2026/01/16 10:47:45 [info] 7#7: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:6954
+2026/01/16 10:52:58 [error] 7#7: *3 failed to load external Lua file "/usr/local/openresty/nginx/services/my.lua": cannot open /usr/local/openresty/nginx/services/my.lua: No such file or directory, client: 172.18.0.1, server: *.*, request: "GET / HTTP/1.1", host: "127.0.0.1:6954"
+2026/01/16 10:52:58 [info] 7#7: *3 client 172.18.0.1 closed keepalive connection
+2026/01/16 10:53:32 [error] 7#7: *4 failed to load external Lua file "/usr/local/openresty/nginx/services/my.lua": cannot open /usr/local/openresty/nginx/services/my.lua: No such file or directory, client: 172.18.0.1, server: *.*, request: "GET / HTTP/1.1", host: "127.0.0.1:6954"
+2026/01/16 10:54:32 [info] 7#7: *5 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:6954
+2026/01/16 10:57:01 [alert] 1#1: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:10
+2026/01/16 10:58:03 [info] 7#7: *1 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:6954
+2026/01/16 10:59:10 [alert] 1#1: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:10
+2026/01/16 10:59:50 [alert] 1#1: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:10
+2026/01/16 11:00:53 [info] 7#7: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:6954

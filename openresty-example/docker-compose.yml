@@ -1,0 +1,18 @@
+# docker-compose.yml
+services:
+  # 数据库服务
+  openresty:
+    image: openresty/openresty:alpine
+    container_name: my-openresty
+    ports:
+      - "6954:6954"
+    environment:
+      TZ: Asia/Shanghai  # 时区设置
+    volumes:
+      # 配置文件
+      - ./conf/my.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      # Lua脚本目录
+      - ./services:/usr/local/openresty/nginx/services
+      # 日志目录
+      - ./logs:/usr/local/openresty/nginx/logs
+    restart: unless-stopped
